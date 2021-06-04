@@ -1,4 +1,4 @@
-/*reset les paddings et margins auto en css*/
+/*reset les paddings et margins auto en css*/ 
 /* * {
 padding: 0;
 margin: 0;
@@ -6,7 +6,7 @@ margin: 0;
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 .photo {
@@ -19,6 +19,7 @@ body {
 .header {
   font-family: "Spartan", sans-serif;
   font-size: 40px; /*taille 38*/
+  color: white;
 }
 
 .poste {
@@ -26,55 +27,59 @@ body {
   font-size: 18px; /*taille 11*/
   text-transform: uppercase;
   font-weight: bold;
+  color: white;
 }
 
 .banner {
   display: flex;
   justify-content: space-evenly;
   padding: 40px;
-  border-style: none;
-  background-color: #7A071C;
-  background-image: url("/slides_tech_startup_gradient1.png") no repeat;
-  /* background-size: contain; */
+  /* background-color: #7A071C; */
+  background-image: url("/slides_tech_startup_sky_lin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+
 }
 
 .container {
   display: flex;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 0px;
   align-items: flex-start;
-  /* align-items: stretch; */
 }
 
 .item_left {
-  /* flex-grow: 10;
-  flex-shrink: 3; */
   width: 60%;
   background-color: white;
-  padding: 20px;
+  padding: 30px;
+  /* padding-left: 20px; */
 }
 
 .item_right {
-  /* flex-grow: 10;
-  flex-shrink: 3; */
   width: 40%;
-  background-color: gold;
-  padding: 20px;
+  /* padding-right: 20px; */
+  /* padding: 20px; */
 }
 
-/* .item_right {
-  background-color: goldenrod;
-  padding: 50px;
-} */
+.item_right_top {
+  background-color: rgba(122, 7, 28, 0.4); 
+  padding: 30px;
+}
 
-/* .item_right {
-  flex-grow: 1;
-} */
+.item_right_bottom {
+  background-color: rgba(122, 7, 28, 0.2); 
+  padding: 30px;
+}
 
 .sect_title {
   font-family: "Spartan", sans-serif;
   font-size: 20px; /*taille 12*/
   text-transform: uppercase;
+  margin-block-start: 1.5em;
+  margin-block-end: 1em;
 }
 
 .job_role {
@@ -82,6 +87,7 @@ body {
   font-size: 17px; /*taille 10*/
   font-weight: bold;
   text-transform: uppercase;
+  margin-block-start: 1.5em;
 }
 
 .society_date_place {
@@ -95,15 +101,32 @@ body {
   font-size: 16px; /*taille 9*/
 }
 
+.list {
+  font-family: "Lato", sans-serif;
+  font-size: 16px; /*taille 9*/
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .right_title {
   font-family: "Spartan", sans-serif;
-  font-size:18px; /*taille 12*/
+  font-size:20px; /*taille 12*/
+  text-align: center;
 }
 
 .center {
   font-family: "Lato", sans-serif;
   font-size: 16px; /*taille 9*/
   text-align: center;
+}
+
+.img_center {
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* text-align: center; */
+  display: block;
+  justify-content: center;
+  width: 100%;
 }
 
 a {
