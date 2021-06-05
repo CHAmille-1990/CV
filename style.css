@@ -14,7 +14,7 @@ body {
   justify-content: space-evenly;
   padding: 40px;
   background-image: url("/slides_tech_startup_sky_lin.svg");
-/*   background-color: #7A071C; */
+  background-color: #7A071C;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
